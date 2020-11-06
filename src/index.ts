@@ -1,3 +1,4 @@
+import decode from 'jwt-decode';
 import { Crypto } from '@peculiar/webcrypto';
 
 import { replace, arrayBufferToString, stringToArrayBuffer } from './utilts';
@@ -85,14 +86,14 @@ async function build(
 
 export const encrypt = async (
   data: Data,
-  keyId: KeyId,
   context: string,
   index = 0
 ) => {
   const crypto = new Crypto();
+  const keyId = <KeyId>decode(context);
 
   const header: Header = {
-    kid: keyId.flx.jwk.kid || '',
+    kid: keyId.flx.jwk.kid,
     alg: 'RSA-OAEP',
     enc: 'A256GCM'
   };
