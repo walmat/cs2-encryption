@@ -14,28 +14,28 @@ npm i cs2-encryption -S
 ## Card Types Declarations
 ```
 # visa
-'001'
+=> '001'
 
 # mastercard
-'002'
+=> '002'
 
 # american express
-'003'
+=> '003'
 
 # maestro
-'042'
+=> '042'
 
 # discover
-'004'
+=> '004'
 
 # diners club
-'005'
+=> '005'
 
 # jcb
-'007'
+=> '007'
 
 # china unionpay
-'062'
+=> '062'
 ```
 
 ## Usage
