@@ -1,0 +1,6 @@
+!dist
+coverage
+src
+test
+tsconfig.json
+tslint.json
