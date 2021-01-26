@@ -1,5 +1,7 @@
 # Cybersource V2 Encryption
-A small (~12kB) helper library to port NodeJS WebCrypto and perform [Cybersource V2](https://www.cybersource.com/en-us.html) MicroForm encryption. 
+> A small (~12kB) helper library to port NodeJS WebCrypto and perform [Cybersource V2](https://www.cybersource.com/en-us.html) MicroForm encryption. 
+
+[![NPM registry](https://img.shields.io/npm/v/cs2-encryption.svg?style=for-the-badge)](https://yarnpkg.com/en/package/cs2-encryption) [![NPM license](https://img.shields.io/badge/license-mit-red.svg?style=for-the-badge)](LICENSE.md)
 
 ## Installation
 ```
@@ -11,7 +13,7 @@ npm i cs2-encryption -S
 ```
 
 
-## CardTypes
+## Card Types
 ```
 import { CardTypes } from 'cs2-encryption';
 
