@@ -15,7 +15,7 @@ npm i cs2-encryption -S
 ```
 import { CardTypes } from 'cs2-encryption';
 
-console.log(CardTypes.Visa)
+console.log(CardTypes.Visa);
 // => '001'
 ```
 
