@@ -1,5 +1,5 @@
 # Cybersource V2 Encryption
-A small (~12kb) helper library to port NodeJS WebCrypto and perform [Cybersource V2](https://www.cybersource.com/en-us.html) MicroForm encryption. 
+A small (~12kB) helper library to port NodeJS WebCrypto and perform [Cybersource V2](https://www.cybersource.com/en-us.html) MicroForm encryption. 
 
 ## Installation
 ```
