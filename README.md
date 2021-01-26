@@ -43,5 +43,17 @@ console.log(encrypted);
 
 console.log(typeof encrypted);
 // => string (an encrypted JWT)
-
 ```
+
+## Changelog
+
+### [1.0.4] - 2021-01-25
+
+#### Changed
+- Fixed types
+- Fixed compilation error from WebCrypto port
+
+### [1.0.0 - 1.0.3] - 2020-11-06
+
+#### Added
+- Cybersource V2 Encryption
