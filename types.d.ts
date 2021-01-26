@@ -1,4 +1,4 @@
-export type Data = {
+export type CardData = {
   securityCode: string;
   number: string;
   type: string;
@@ -32,33 +32,33 @@ export type KeyId = {
   jti: string;
 };
 
-// derived from cybersource v2 card types
-export type Type = '001' | '002' | '042' | '004' | '005' | '007' | '062';
-
 export type DecodedJwtData = {
   data: {
     expirationYear: string;
     number: string;
     expirationMonth: string;
-    type: Type;
+    type: string;
   };
-  iss: 'Flex/04';
+  iss: string;
   exp: number;
-  type: 'mf-0.11.0';
+  type: string;
   iat: number;
   jti: string;
 };
 
-type Payload = {
-  data: Data;
+// encryption payload
+export type Payload = {
+  data: CardData;
   context: string;
   index: number;
 };
 
-type Header = {
+// encryption header
+export type Header = {
   kid: string;
   alg: string;
   enc: string;
 };
 
-type InitializationVector = Uint8Array;
+// Useful for readability
+export type InitializationVector = Uint8Array;

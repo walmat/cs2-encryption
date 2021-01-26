@@ -11,7 +11,7 @@
     /* Generate type definitions */
     "declaration": true,
     /* Redirect output files to dist folder */
-    "outDir": "./dist",
+    "outDir": "./lib",
     /* Enable all strict type checking options. */
     "strict": true,
     /* Include modules imported with .json extension. */
@@ -19,5 +19,6 @@
     /* Avoid `import * as` syntax */
     "esModuleInterop": true
   },
+  "files": ["./src/index.ts"],
   "include": ["src/**/*"]
 }
